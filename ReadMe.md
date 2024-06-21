@@ -40,11 +40,11 @@ The results below are cherry picked! Don't expect hallucination free multimodal 
 </p>
 
 <p align="center">
-    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo_direct.png" width="950" height="350">
+    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo_direct.png" width="950" height="300">
 </p>
 
 <p align="center">
-    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo.png" width="1000" height="500">
+    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo.png" width="1000" height="400">
 </p>
 
 ---
