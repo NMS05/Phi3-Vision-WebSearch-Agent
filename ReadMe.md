@@ -1,16 +1,14 @@
 # Phi3 Vision WebSearch Agent
 
----
-
 ## Problem Statement
 
 Phi3 Vision is an advanced Vision-Language Model (VLM) developed by Microsoft, achieving state-of-the-art performance on various benchmarks despite its compact size. However, like all Large Language Models (LLMs) with parametric world knowledge, Phi3 Vision has some limitations:
 
 - Limited capacity to remember extensive information due to a finite number of parameters.
-- Inability to answer knowledge-intensive queries that require information beyond the provided image. In such cases, it may either refuse to answer or provide incorrect information (hallucinate). In the below example it does both!
+- Inability to answer knowledge-intensive queries that require information beyond the provided image. In such cases, it may either refuse to answer or provide incorrect information (hallucinate). In the below example it does both (the bird is a "Common Yellowthroat")!
 
 <p align="center">
-    <img src="" width="400" height="200">
+    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/error2.png" width="800" height="350">
 </p>
 
 ---
@@ -38,15 +36,15 @@ The Phi-3 Vision (Phi3V) Agent is built on top of the Phi3V Vision-Language Mode
 The results below are cherry picked! Don't expect hallucination free multimodal agents anytime soon.
 
 <p align="center">
-    <img src="" width="200" height="200">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/At_Jewel_Changi%2C_Singapore_2023_36.jpg/450px-At_Jewel_Changi%2C_Singapore_2023_36.jpg" width="350" height="300">
 </p>
 
 <p align="center">
-    <img src="" width="400" height="200">
+    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo_direct.png" width="950" height="350">
 </p>
 
 <p align="center">
-    <img src="" width="400" height="200">
+    <img src="https://github.com/NMS05/Phi3-Vision-WebSearch-Agent/blob/main/assets/gradio_demo.png" width="1000" height="500">
 </p>
 
 ---
@@ -56,8 +54,8 @@ The results below are cherry picked! Don't expect hallucination free multimodal 
 Just make sure your CUDA version supports flash-attention and you install the PyTorch version compatible with CUDA. Here, the requirements.txt are for CUDA 12.2
 
 ```bash
-git clone 
-cd 
+git clone https://github.com/NMS05/Phi3-Vision-WebSearch-Agent.git
+cd Phi3-Vision-WebSearch-Agent
 conda create -n phi3v_agent python=3.10
 conda activate phi3v_agent
 pip install -r requirements.txt
@@ -79,14 +77,15 @@ pip install -r requirements.txt
 ## Running the Phi3V Agent
 
 ```bash
-
+cd vlm_servers/
 uvicorn Phi3_Vision_Server:app --host 127.0.0.1 --port 8001 # run the fastAPI VLM server in a new terminal
 
 python chat.py # if you want to chat with the Agent via terminal.
 
 python gradio_demo.py # if you need to chat with the Agent via a simple UI
 ```
-Open any Wikipedia page of interest, copy the image_url. Provide the image_url and query as input to the Agent.
+* Open any Wikipedia page of interest & copy the image_url.
+* Provide the image_url and query as input to the Agent.
 
 ---
 
