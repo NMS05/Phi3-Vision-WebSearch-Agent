@@ -15,7 +15,7 @@ Phi3 Vision is an advanced Vision-Language Model (VLM) developed by Microsoft, a
 
 ## Solution - Retrieval-Augmented Generation (RAG) with Internet
 
-What if the Phi3 Vision model could search the internet to retrieve relevant content, enhancing its ability to answer knowledge-intensive queries? The primary objective of this repository is to provide a hands-on experience in developing an Internet-based RAG Agent from scratch using the Phi3 Vision model.
+What if the Phi3 Vision model could search the internet to retrieve relevant content, enhancing its ability to answer knowledge-intensive queries? The primary objective of this repository is to develop an Internet-based RAG Agent from scratch using the Phi3 Vision model.
 
 
 ## How the Phi3V Agent works?
